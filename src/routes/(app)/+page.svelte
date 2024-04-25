@@ -1,7 +1,5 @@
 <script>
-    import Header from "$lib/components/Header.svelte";
+    import Hero from "$lib/components/Hero.svelte";
 </script>
 
-<div class="flex flex-col gap-6">
-    <Header />
-</div>
+<Hero />
