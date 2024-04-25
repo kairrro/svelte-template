@@ -1,2 +1,2 @@
 # Kyros Svelte Template
-Contains Tailwind CSS and removes default browser CSS. More stuff will be added soon!
+Contains Tailwind CSS, removes default CSS styling from browsers and a bit more.
