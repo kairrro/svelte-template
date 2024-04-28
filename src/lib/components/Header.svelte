@@ -27,9 +27,9 @@
 
         {#if dropdownOpen}
             <div class="hidden md:flex flex-col absolute top-[83px] z-20 shadow-xl bg-zinc-900 rounded-lg w-[90%] border-zinc-700 border-[1px]" transition:slide >
-                <a class="flex items-center h-12 hover:bg-zinc-600 px-4 transition transition-300" href="/" on:click={() => toggleDropdown()} >Placeholder</a>
-                <a class="flex items-center h-12 hover:bg-zinc-600 px-4 transition transition-300 border-zinc-700 border-t-[1px]" href="/" on:click={() => toggleDropdown()} >Placeholder</a>
-                <a class="flex items-center h-12 hover:bg-zinc-600 px-4 transition transition-300 border-zinc-700 border-t-[1px]" href="/" on:click={() => toggleDropdown()} >Placeholder</a>
+                <a class="flex items-center h-12 hover:bg-zinc-600 rounded-lg px-4 transition transition-300" href="/" on:click={() => toggleDropdown()} >Placeholder</a>
+                <a class="flex items-center h-12 hover:bg-zinc-600 rounded-lg px-4 transition transition-300 border-zinc-700 border-t-[1px]" href="/" on:click={() => toggleDropdown()} >Placeholder</a>
+                <a class="flex items-center h-12 hover:bg-zinc-600 rounded-lg px-4 transition transition-300 border-zinc-700 border-t-[1px]" href="/" on:click={() => toggleDropdown()} >Placeholder</a>
             </div>
         {/if}
     </div>

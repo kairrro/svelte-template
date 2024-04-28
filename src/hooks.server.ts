@@ -23,7 +23,7 @@ export const handle: Handle = async ({ event, resolve }) => {
         const dateAndTime = `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;
 
         const embed = {
-            title: 'New Logs',
+            title: ':newspaper:  New Logs',
             description: `Someone visited your site`,
             fields: [
                 {
