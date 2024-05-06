@@ -17,7 +17,7 @@
     
         <div class="flex items-center gap-12 md:hidden">
             <a href="/" class="hover:underline underline-offset-4 transition">Home</a>
-            <a href="/" class="hover:underline underline-offset-4 transition">Placeholder</a>
+            <a href="/faq" class="hover:underline underline-offset-4 transition">FAQ</a>
             <a href="/" class="hover:underline underline-offset-4 transition">Placeholder</a>
         </div>
 
