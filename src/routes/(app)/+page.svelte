@@ -10,4 +10,8 @@
     <meta property="og:image" content="/favicon.png">
 </svelte:head>
 
-<Hero />
+<Hero
+  pictures={[
+    "https://i.pinimg.com/originals/b4/f5/2d/b4f52d2709f32a86431ea6ed79902551.jpg",
+  ]}
+/>

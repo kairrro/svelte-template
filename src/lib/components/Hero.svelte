@@ -1,17 +1,69 @@
+<script lang="ts">
+    import { descriptionColor } from "$lib/scripts/stores/appearance";
+    import Header from "./Header.svelte";
+
+    export let pictures: string[] = [];
+
+    let index: number = 0;
+    let currentPicture: string = pictures[0];
+    let isImageVisible: boolean = true;
+
+    const changePicture = () => {
+        if (pictures.length > 1){
+            setInterval(() => {
+                isImageVisible = false;
+                setTimeout(() => {
+                    index = (index + 1) % pictures.length;
+                    currentPicture = pictures[index];
+                }, 500);
+            }, 4000);
+        }
+    };
+
+    function imageIsVisible() {
+        isImageVisible = true;
+    }
+
+    changePicture();
+</script>
+
 <section>
-    <div class="relative flex items-center gap-20 justify-evenly w-screen mt-[-55px] bg-no-repeat h-[76vh] bg-cover md:h-[70vh]" >
-        <div class="max-w-[1279px] w-[1279px] mx-auto z-10 pl-20 md:p-0 md:px-4">
-            <div class="flex flex-col items-start gap-10 max-w-[550px] md:mx-auto ">
-                <div class="flex flex-col gap-4 md:text-center">
-                    <h2 class="text-5xl font-semibold leading-snug md:text-3xl">Svelte Template</h2>
-                    <p class="text-zinc-300 md:text-sm" >This is where you put your desired description for the hero section</p>
-                </div>
-                <div class="flex items-center gap-4 mr-auto md:mx-auto">
-                    <a href="/" class="border-[2px] border-[#f1f1f1] px-8 py-2 whitespace-nowrap rounded-lg text-black mr-auto bg-[#f1f1f1] bg-[#f1f1f1] transition md:ml-auto text-center hover:border-[#a3a3a3] hover:bg-[#a3a3a3]">
-                        Button
-                    </a>
-                </div>
+    <div 
+        class="relative flex flex-col gap-2 justify-evenly w-screen bg-no-repeat h-[90vh]" 
+        id="hero"
+    >
+        <div class="flex flex-col justfiy-between h-full max-w-[1279px] w-full mx-auto z-20">
+            <Header />
+
+            <div class="flex flex-col gap-4 items-center justify-center text-center h-full pl-20 md:mx-auto md:px-4">
+                <p class="text-5xl font-semibold md:text-4xl" >Svelte Template</p>
+                <p class="{$descriptionColor} text-sm leading-loose" >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                </p>
+                <!-- Content Here -->
             </div>
         </div>
+
+        <div class="absolute top-0 left-0 w-full h-full opacity-50 bg-black z-10"></div>
+
+        <img 
+            src={currentPicture} 
+            class:fade-in={isImageVisible}  
+            alt="slideshow-pic" 
+            class="absolute w-screen h-[90vh] object-cover"
+            on:load={imageIsVisible}
+        />
     </div>
 </section>
+
+<style>
+    .fade-in {
+        opacity: 1;
+        transition: opacity 500ms ease-in-out;
+    }
+  
+    img {
+        opacity: 0;
+        transition: opacity 500ms ease-in-out;
+    }
+</style>
