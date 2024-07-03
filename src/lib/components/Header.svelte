@@ -32,7 +32,7 @@
 
 {#if dropdownOpen}
     <div 
-        class="fixed hidden md:flex flex-col justify-between h-full gap-2 h-screen w-[40vw] max-w-[500px] bg-[#0f0f0f] z-20 py-4 left-0 {$descriptionColor}" 
+        class="fixed hidden md:flex flex-col justify-between h-full gap-2 h-screen w-full max-w-[300px] bg-[#0f0f0f] z-20 py-4 left-0 {$descriptionColor}" 
         use:clickOutside
         on:outside={closeDropdown}
         transition:slide={{ axis: "x" }}
@@ -50,6 +50,7 @@
                 <a
                     href="/"  
                     class="flex items-center gap-2 w-full py-2"  
+                    on:click={closeDropdown}
                 >
                     {@html Profile(undefined, "22px")}
                     <p>Home</p>
@@ -57,6 +58,7 @@
                 <a
                     href="/"  
                     class="flex items-center gap-2 w-full py-2"  
+                    on:click={closeDropdown}
                 >
                     {@html Star("#f1f1f1", "22px")}
                     <p>Placeholder</p>
@@ -71,6 +73,7 @@
                 <a
                     href="/"    
                     class="flex items-center gap-2 w-full py-2" 
+                    on:click={closeDropdown}
                 >
 
                     {@html Settings("#818097", "22px")}
@@ -80,6 +83,7 @@
                 <a
                     href="/"    
                     class="flex items-center gap-2 w-full py-2"  
+                    on:click={closeDropdown}
                 >
                     {@html Info(undefined, "22px")}
                     <p>Help</p>

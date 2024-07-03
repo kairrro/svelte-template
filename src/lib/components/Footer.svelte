@@ -1,13 +1,72 @@
+<script>
+    import { Discord, Twitter } from "$lib/scripts/logos";
+</script>
 
-<footer>
-    <div class="flex flex-col items-center gap-4 pb-2 max-w-[1279px] mx-auto px-6 mt-[50vh] text-sm md:mr-auto md:items-start ">
-        <div class="flex items-center gap-16 md:flex-col md:gap-4 md:items-start">
-            <a class="hover:underline underline-offset-4 transition" href="/" >Home</a>
-            <a class="hover:underline underline-offset-4 transition" href="/faq" >FAQ</a>
-            <a class="hover:underline underline-offset-4 transition" href="/privacy" >Privacy Policy</a>
-            <a class="hover:underline underline-offset-4 transition" href="/tos" >Terms of Service</a>
+<footer class="w-full max-w-[1279px] mx-auto" >
+    <div class="flex items-center gap-20 py-16 px-6 md:px-4 md:flex-col md:gap-10 md:items-start">
+        <div class="flex flex-col items-end gap-2">
+            <div class="flex items-center gap-2" >
+                <img 
+                    src="/favicon.png" 
+                    alt="logo"
+                    class="w-16"
+                />
+                <h2 class="text-3xl font-medium" >Template</h2> 
+            </div>
+            <p class="text-sm" >Copyright © Template 2024</p>
         </div>
 
-        <span class="flex justify-center text-zinc-300 md:text-sm">Copyright @ Hone 2024</span>
+        <div class="flex flex-col gap-2 text-sm">
+            <a 
+                href="/privacy" 
+                class="hover:underline underline-offset-2" 
+            >
+                Privacy
+            </a>
+            <a 
+                href="/faq" 
+                class="hover:underline underline-offset-2" 
+            >
+                FAQ
+            </a>
+            <a 
+                href="/tos" 
+                class="hover:underline underline-offset-2" 
+            >
+                Terms of Service
+            </a>
+        </div>
+
+        <div class="flex flex-col gap-2 text-sm">
+            <a 
+                href="/login"
+                class="hover:underline underline-offset-2" 
+            >
+                Login
+            </a>
+            <a 
+                href="/register"
+                class="hover:underline underline-offset-2" 
+            >
+                Register
+            </a>
+            <a 
+                target="_blank" 
+                class="hover:underline underline-offset-2" 
+                href="https://hone.mysellix.io/product/65d8bf1f87d6c"
+            >
+                Premium
+            </a>
+        </div>
+
+        <div class="flex items-center gap-8">
+            <a href="/" target="_blank" class="hover:scale-110 transition">
+                {@html Discord("#f1f1f1", "34px")}
+            </a>
+
+            <a href="/" target="_blank" class="hover:scale-110 transition" >
+                {@html Twitter("#f1f1f1", "34px")}
+            </a>
+        </div>
     </div>
 </footer>
