@@ -29,12 +29,10 @@
 
 <section>
     <div 
-        class="relative flex flex-col gap-2 justify-evenly w-screen bg-no-repeat h-[90vh]" 
+        class="relative flex flex-col gap-2 justify-evenly w-screen bg-no-repeat h-[90vh] mt-[-172px]" 
         id="hero"
     >
         <div class="flex flex-col h-full max-w-[1279px] mx-auto w-full z-20">
-            <Header />
-
             <div class="flex flex-col items-center justify-center text-center gap-4 h-full md:mx-auto md:px-4">
                 <p class="text-5xl font-semibold md:text-4xl" >Svelte Template</p>
                 <p class="{$descriptionColor} text-sm leading-loose" >

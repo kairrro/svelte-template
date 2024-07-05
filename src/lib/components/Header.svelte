@@ -4,7 +4,7 @@
     import { clickOutside } from "$lib/scripts/functions/misc";
     import { slide } from "svelte/transition";
 
-    let dropdownOpen = true;
+    let dropdownOpen = false;
 
     function toggleDropdown(){
         dropdownOpen = !dropdownOpen;
@@ -15,7 +15,7 @@
     }
 </script>
 
-<header class="relative flex items-center justify-between box-sizing w-full text-sm z-10 px-4 py-4">
+<header class="relative flex items-center justify-between box-sizing w-full text-sm z-10 px-10 py-4 z-30">
     <a href="/" class="transition hover:scale-110">
         <img src="/assets/logo.png" alt="logo" width="60px" height="60px" class="rounded-lg" />
     </a>
@@ -32,7 +32,7 @@
 
 {#if dropdownOpen}
     <div 
-        class="fixed hidden md:flex flex-col justify-between h-full gap-2 h-screen w-full max-w-[300px] bg-[#0f0f0f] z-20 py-4 left-0 {$descriptionColor}" 
+        class="fixed hidden md:flex flex-col justify-between h-full gap-2 h-screen w-full max-w-[300px] bg-[#0f0f0f] z-40 py-4 left-0 {$descriptionColor}" 
         use:clickOutside
         on:outside={closeDropdown}
         transition:slide={{ axis: "x" }}
