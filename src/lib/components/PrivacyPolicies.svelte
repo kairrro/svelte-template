@@ -1,5 +1,6 @@
 <script lang="ts">
     import { descriptionColor, textColor } from "$lib/scripts/stores/appearance";
+  import { fade } from "svelte/transition";
 import Rule from "./Rule.svelte";
 
     let typeOfDataCollected = [
@@ -26,14 +27,20 @@ import Rule from "./Rule.svelte";
             We may also collect information that Your browser sends whenever You visit our Service or when You access the Service by or through a mobile device.
         `
     ];
+
+    let pageRendered = false;
+
+    setTimeout(() => {
+        pageRendered = true;
+    }, 5)
 </script>
 
 <svelte:head>
     <title>Privacy Policy</title>
 </svelte:head>
 
-<section>
-    <div class="flex flex-col gap-10 mx-auto max-w-[1279px] px-10" >
+{#if pageRendered}
+    <section class="flex flex-col gap-10 mx-auto max-w-[1279px] px-10" transition:fade >
         <div class="flex flex-col gap-2">
             <h1 class="font-semibold text-3xl {$textColor}">Privacy Policy</h1>
             <p class="{$descriptionColor} leading-loose text-sm " >This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.</p>
@@ -50,5 +57,5 @@ import Rule from "./Rule.svelte";
                 rules = {usageData}
             />
         </div>
-    </div>
-</section>
+    </section>
+{/if}

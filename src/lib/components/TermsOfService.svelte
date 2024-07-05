@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { fade } from "svelte/transition";
     import Rule from "./Rule.svelte";
 
     let userAccountRules = [
@@ -83,14 +84,20 @@
             third parties for purposes of facilitating the completion of Your Order.
         `
     ];
+
+    let pageRendered = false;
+
+    setTimeout(() => {
+        pageRendered = true;
+    }, 5)
 </script>
 
 <svelte:head>
     <title>Terms and Conditions</title>
 </svelte:head>
 
-<section>
-    <div class="flex flex-col gap-10 mx-auto max-w-[1279px] px-10" >
+{#if pageRendered}
+    <section class="flex flex-col gap-10 mx-auto max-w-[1279px] px-10" transition:fade >
         <div class="flex flex-col gap-2">
             <h1 class="font-semibold text-3xl">Terms and Conditions</h1>
             <p class="text-zinc-300" >Please read these terms and conditions carefully before using Our Service.</p>
@@ -127,5 +134,5 @@
                 rules = {changesToTOS}
             />
         </div>
-    </div>
-</section>
+    </section>
+{/if}
