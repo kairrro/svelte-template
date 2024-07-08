@@ -12,12 +12,12 @@
 </script>
 
 {#if pageRendered}
-    <div 
-        class="flex flex-col gap-20 mx-auto"
-        transition:fade
-    >
+    <div class="flex flex-col gap-20" >
         <Header />
-        <main>
+        <main 
+            class="flex flex-col gap-20"
+            transition:fade
+        >
             <slot />
         </main>
         <Footer />

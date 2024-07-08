@@ -1,5 +1,5 @@
 <script>
-    import { Hamburger, Info, Profile, Star, Settings, Cancel } from "$lib/scripts/logos";
+    import { Hamburger, Cancel } from "$lib/scripts/logos";
     import { descriptionColor } from "$lib/scripts/stores/appearance";
     import { clickOutside } from "$lib/scripts/functions/misc";
     import { slide } from "svelte/transition";
@@ -15,7 +15,7 @@
     }
 </script>
 
-<header class="relative flex items-center justify-between box-sizing w-full text-sm z-10 px-10 py-4 z-30">
+<header class="relative flex items-center justify-between box-sizing w-full text-sm z-10 px-10 py-4 z-30 max-w-[1279px] mx-auto">
     <a href="/" class="transition hover:scale-110">
         <img src="/assets/logo.png" alt="logo" width="60px" height="60px" class="rounded-lg" />
     </a>
