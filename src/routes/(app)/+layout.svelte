@@ -4,8 +4,4 @@
     import Header from "$lib/components/Header.svelte";
 </script>
 
-<div class="flex flex-col gap-20 mx-auto">
-    <Header />
-    <slot />
-    <Footer />
-</div>
+<slot />

@@ -13,6 +13,7 @@
     export let type: string = "";
     export let placeholder: string = "";
     export let disabled: boolean = false;
+    export let label: boolean = true;
     
     export let maxTextLength: number = 400;
     $: currentTextLength = (value ?? '').length;
@@ -27,7 +28,9 @@
 </script>
 
 <div class={`flex flex-col gap-2 w-full ${$textColor}`}>
-    <label for={id} class={`text-sm font-medium ${$textColor}`} >{name}</label>
+    {#if label}
+        <label for={id} class={`text-sm ${$textColor}`} >{name}</label>
+    {/if}
     
     {#if id === 'email'}
         <input 
@@ -77,7 +80,7 @@
     {:else if textarea}
         <textarea 
             id={id} 
-            class={`${$inputBorder} ${$inputBackground} text-sm pl-2 h-28 resize-none rounded-lg outline-none w-full`}
+            class={`${$inputBorder} ${$inputBackground} text-sm pl-2 h-14 resize-none rounded-lg outline-none w-full`}
             bind:value={value} 
             maxlength={maxTextLength} 
         />

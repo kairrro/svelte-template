@@ -35,7 +35,7 @@
         <div class="flex flex-col h-full max-w-[1279px] mx-auto w-full z-20">
             <div class="flex flex-col items-center justify-center text-center gap-4 h-full md:mx-auto md:px-4">
                 <p class="text-5xl font-semibold md:text-4xl" >Svelte Template</p>
-                <p class="{$descriptionColor} text-sm leading-loose" >
+                <p class="{$descriptionColor} leading-loose max-w-[700px]" >
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
                 </p>
                 <!-- Content Here -->
