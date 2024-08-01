@@ -2,6 +2,7 @@
     import Hero from "$lib/components/Hero.svelte";
     import { PUBLIC_SITE_NAME } from "$env/static/public";
     import { description } from "$lib/scripts/globals/misc";
+    import Content from "$lib/components/custom/Content.svelte";
 </script>
 
 <svelte:head>
