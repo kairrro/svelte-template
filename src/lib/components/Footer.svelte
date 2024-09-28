@@ -3,7 +3,7 @@
 </script>
 
 <footer class="w-full max-w-[1279px] mx-auto" >
-    <div class="flex items-start gap-20 py-16 px-6 md:px-4 md:flex-col md:gap-10 md:items-start">
+    <div class="flex justify-center items-center gap-20 py-16 px-6 md:px-4 md:flex-col md:gap-10 md:items-start">
         <div class="flex flex-col items-start gap-2 md:items-start md:gap-4">
             <a 
                 class="flex items-center gap-2 hover:scale-105 transition md:items-start md:flex-col md:gap-4" 

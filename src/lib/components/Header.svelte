@@ -15,19 +15,21 @@
     }
 </script>
 
-<header class="relative flex items-center justify-between box-sizing w-full text-sm z-10 px-10 py-4 z-30 max-w-[1279px] mx-auto">
-    <a href="/" class="transition hover:scale-110">
-        <img src="/assets/logo.png" alt="logo" width="60px" height="60px" class="rounded-lg" />
-    </a>
-
-    <div class="flex items-center gap-12 md:hidden">
-        <a href="/" class="hover:underline underline-offset-4 transition">Home</a>
-        <a href="/" class="hover:underline underline-offset-4 transition">Placeholder</a>
+<header class="fixed w-screen bg-[#0A0A0A] top-0 right-0 left-0 border-b-[1px] border-zinc-800 flex items-center justify-between box-sizing w-full text-sm z-20 px-10 py-[12px] z-30 ">
+    <div class="flex items-center justify-between max-w-[1279px] w-full mx-auto" >
+        <a href="/" class="transition hover:scale-110">
+            <img src="/assets/logo.png" alt="logo" width="40px" height="40px" class="rounded-lg" />
+        </a>
+    
+        <div class="flex items-center gap-12 md:hidden text-xs">
+            <a href="/" class="hover:underline underline-offset-4 transition">Home</a>
+            <a href="/" class="hover:underline underline-offset-4 transition">Placeholder</a>
+        </div>
+    
+        <button class="hidden md:flex p-2" on:click={() => toggleDropdown()} >
+            {@html Hamburger()}
+        </button>  
     </div>
-
-    <button class="hidden md:flex p-2" on:click={() => toggleDropdown()} >
-        {@html Hamburger()}
-    </button>  
 </header>
 
 {#if dropdownOpen}
@@ -37,7 +39,6 @@
         on:outside={closeDropdown}
         transition:slide={{ axis: "x" }}
     >   
-
         <div class="flex flex-col gap-4" >
             <button 
                 class="ml-auto mr-4" 

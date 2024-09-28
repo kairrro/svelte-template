@@ -29,7 +29,7 @@
 
 <section>
     <div 
-        class="relative flex flex-col gap-2 justify-evenly w-screen bg-no-repeat h-[90vh] mt-[-172px]" 
+        class="relative flex flex-col gap-2 justify-evenly w-screen bg-no-repeat h-[90vh]" 
         id="hero"
     >
         <div class="flex flex-col h-full max-w-[1279px] mx-auto w-full z-20">
@@ -42,15 +42,17 @@
             </div>
         </div>
 
-        <div class="absolute top-0 left-0 w-full h-full opacity-50 bg-black z-10"></div>
+        {#if pictures.length > 0}
+            <div class="absolute top-0 left-0 w-full h-full opacity-50 bg-black z-10"></div>
 
-        <img 
-            src={currentPicture} 
-            class:fade-in={isImageVisible}  
-            alt="slideshow-pic" 
-            class="absolute w-screen h-[90vh] object-cover"
-            on:load={imageIsVisible}
-        />
+            <img 
+                src={currentPicture} 
+                class:fade-in={isImageVisible}  
+                alt="slideshow-pic" 
+                class="absolute w-screen h-[90vh] object-cover"
+                on:load={imageIsVisible}
+            />
+        {/if}
     </div>
 </section>
 
