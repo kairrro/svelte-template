@@ -23,7 +23,8 @@
     
         <div class="flex items-center gap-12 md:hidden text-xs">
             <a href="/" class="hover:underline underline-offset-4 transition">Home</a>
-            <a href="/" class="hover:underline underline-offset-4 transition">Placeholder</a>
+            <a href="/login" class="hover:underline underline-offset-4 transition">Login</a>
+            <a href="/register" class="hover:underline underline-offset-4 transition">Register</a>
         </div>
     
         <button class="hidden md:flex p-2" on:click={() => toggleDropdown()} >
