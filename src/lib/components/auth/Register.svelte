@@ -139,7 +139,7 @@
 
 <section>
     <form>
-        <div class="flex flex-col gap-6 z-10 mx-auto authorize max-w-[450px] px-4 h-screen mt-40" >
+        <div class="flex flex-col gap-6 z-10 mx-auto authorize max-w-[450px] px-4 mt-40 h-screen" >
             <div class="flex flex-col gap-2">
                 <h1 class="text-xl font-medium" >Register</h1>
                 <p class={`${$descriptionColor} text-sm md:text-xs`} >Create your account here.</p>

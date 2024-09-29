@@ -40,10 +40,13 @@ import Rule from "../Rule.svelte";
 </svelte:head>
 
 {#if pageRendered}
-    <section class="flex flex-col gap-10 mx-auto max-w-[1279px] px-10 mt-20 h-screen" transition:fade >
+    <section class="flex flex-col gap-10 mx-auto max-w-[1279px] px-10 mt-40" transition:fade >
         <div class="flex flex-col gap-2">
             <h1 class="font-semibold text-3xl {$textColor}">Privacy Policy</h1>
-            <p class="{$descriptionColor} leading-loose text-sm " >This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.</p>
+            <p class="{$descriptionColor} leading-loose text-sm " >
+                This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells 
+                You about Your privacy rights and how the law protects You.
+            </p>
         </div>
 
         <div class="flex flex-col gap-16" >

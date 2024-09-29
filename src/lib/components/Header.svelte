@@ -15,7 +15,7 @@
     }
 </script>
 
-<header class="fixed w-screen bg-[#0A0A0A] top-0 right-0 left-0 border-b-[1px] border-zinc-800 flex items-center justify-between box-sizing w-full text-sm z-20 px-10 py-[12px] z-30 ">
+<header class="fixed w-screen bg-[#0A0A0A] top-0 right-0 left-0 border-b-[1px] border-zinc-800 flex items-center justify-between box-sizing w-full text-sm z-20 px-10 py-[12px] z-30 md:px-4 ">
     <div class="flex items-center justify-between max-w-[1279px] w-full mx-auto" >
         <a href="/" class="transition hover:scale-110">
             <img src="/assets/logo.png" alt="logo" width="40px" height="40px" class="rounded-lg" />
