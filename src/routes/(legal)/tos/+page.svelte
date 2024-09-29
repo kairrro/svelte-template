@@ -1,5 +1,5 @@
 <script>
-    import TermsOfService from "$lib/components/TermsOfService.svelte";
+    import TermsOfService from "$lib/components/legal/TermsOfService.svelte";
 </script>
 
 <TermsOfService />

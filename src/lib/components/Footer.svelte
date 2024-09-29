@@ -53,13 +53,6 @@
             >
                 Register
             </a>
-            <a 
-                target="_blank" 
-                class="hover:underline underline-offset-2 mr-auto" 
-                href="https://hone.mysellix.io/product/65d8bf1f87d6c"
-            >
-                Premium
-            </a>
         </div>
 
         <div class="flex items-center gap-8">
