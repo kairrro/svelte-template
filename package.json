@@ -26,6 +26,7 @@
 	"dependencies": {
 		"@vercel/analytics": "^1.2.2",
 		"appwrite": "^15.0.0",
+		"node-appwrite": "^14.1.0",
 		"svelte-inview": "^4.0.2"
 	}
 }
