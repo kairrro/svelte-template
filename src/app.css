@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, h1, h2, h3, h4, h5, h6, ul, ol, dl, figure, blockquote, fieldset, legend, button, a, input, section, div, p, span {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    background: rgb(10, 10, 10);
+    color: #f1f1f1;
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+}
+
+
+::-webkit-scrollbar {
+    width: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #bdbdbd;
+    border-radius: 20px;
+}
