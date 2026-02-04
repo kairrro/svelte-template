@@ -21,10 +21,11 @@
             <img src="/assets/logo.png" alt="logo" width="40px" height="40px" class="rounded-lg" />
         </a>
     
-        <div class="flex items-center gap-12 md:hidden text-xs">
+        <div class="flex items-center gap-12 md:hidden text-sm">
             <a href="/" class="hover:underline underline-offset-4 transition">Home</a>
-            <a href="/login" class="hover:underline underline-offset-4 transition">Login</a>
-            <a href="/register" class="hover:underline underline-offset-4 transition">Register</a>
+            <a href="/#how-it-works" class="hover:underline underline-offset-4 transition">How it Works</a>
+            <a href="/#why-it-works" class="hover:underline underline-offset-4 transition">Why it Works</a>
+            <a href="/#waitlist" class="hover:underline underline-offset-4 transition">Join Waitlist</a>
         </div>
     
         <button class="hidden md:flex p-2" on:click={() => toggleDropdown()} >
@@ -48,20 +49,34 @@
                 {@html Cancel("17px", "#f1f1f1")}
             </button>
     
-            <div class="flex flex-col px-4 text-sm" >
+            <div class="flex flex-col gap-4 px-4 text-sm" >
                 <a
-                    href="/"  
-                    class="w-full py-2"  
+                    href="/"
+                    class="w-full py-2"
                     on:click={closeDropdown}
                 >
                     <p>Home</p>
                 </a>
                 <a
-                    href="/"  
-                    class="w-full py-2"  
+                    href="/#how-it-works"
+                    class="w-full py-2"
                     on:click={closeDropdown}
                 >
-                    <p>Placeholder</p>
+                    <p>How it Works</p>
+                </a>
+                <a
+                    href="/#why-it-works"
+                    class="w-full py-2"
+                    on:click={closeDropdown}
+                >
+                    <p>Why it Works</p>
+                </a>
+                <a
+                    href="/#waitlist"
+                    class="w-full py-2"
+                    on:click={closeDropdown}
+                >
+                    <p>Join Waitlist</p>
                 </a>
             </div>
         </div>

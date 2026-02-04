@@ -15,7 +15,7 @@
     <div class="flex flex-col gap-20" >
         <Header />
         <main 
-            class="flex flex-col gap-20"
+            class="flex flex-col"
             transition:fade
         >
             <slot />

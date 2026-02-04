@@ -16,7 +16,7 @@
                 />
                 <h2 class="text-3xl font-medium" >Template</h2> 
             </a>
-            <p class="text-sm" >Copyright © Template 2024</p>
+            <p class="text-sm" >Copyright © Hone Services 2025</p>
         </div>
 
         <div class="flex flex-col gap-2 text-sm">
@@ -25,12 +25,6 @@
                 class="hover:underline underline-offset-2 mr-auto" 
             >
                 Privacy
-            </a>
-            <a 
-                href="/faq" 
-                class="hover:underline underline-offset-2 mr-auto" 
-            >
-                FAQ
             </a>
             <a 
                 href="/tos" 
@@ -42,16 +36,22 @@
 
         <div class="flex flex-col gap-2 text-sm">
             <a 
-                href="/login"
+                href="/#how-it-works"
                 class="hover:underline underline-offset-2 mr-auto" 
             >
-                Login
+                How it Works
             </a>
             <a 
-                href="/register"
+                href="/#why-it-works"
                 class="hover:underline underline-offset-2 mr-auto" 
             >
-                Register
+                Why it Works
+            </a>
+            <a 
+                href="/#waitlist"
+                class="hover:underline underline-offset-2 mr-auto" 
+            >
+                Join Waitlist
             </a>
         </div>
 

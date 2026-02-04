@@ -3,6 +3,9 @@
     import { SITE_NAME } from "$lib/scripts/globals/misc";
     import { description } from "$lib/scripts/globals/misc";
     import Content from "$lib/components/custom/Content.svelte";
+  import JoinWaitlist from "$lib/components/JoinWaitlist.svelte";
+  import HowItWorks from "$lib/components/HowItWorks.svelte";
+  import WhyItWorks from "$lib/components/WhyItWorks.svelte";
 </script>
 
 <svelte:head>
@@ -15,3 +18,6 @@
 </svelte:head>
 
 <Hero />
+<HowItWorks />
+<WhyItWorks />
+<JoinWaitlist />

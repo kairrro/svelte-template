@@ -4,6 +4,7 @@ export const theme = writable<string>("dark");
 
 export let textColor = writable<string>("");
 export let descriptionColor = writable<string>("");
+export let titleColor = writable<string>("");
 export let textAccent = writable<string>("");
 export let elementAccent = writable<string>("");
 export let elementBackgrounds = writable<string>("");
@@ -14,7 +15,7 @@ export let inputBorder = writable<string>("");
 export let inputBackground = writable<string>("");
 export let scrollbarBackground = writable<string>("");
 export let borderColor = writable<string>("");
-export let buttonBackground = writable<string>("bg-indigo-700 hover:opacity-50 transition");
+export let buttonBackground = writable<string>("bg-[#659c8a] hover:opacity-50 transition");
 export let categoryButton = writable<string>("");
 export let dropdownElement = writable<string>("");
 export let firstHeaderSection = writable<string>("");
@@ -31,6 +32,7 @@ theme.subscribe(value => {
         logoColor.set("#f1f1f1");
         textColor.set("text-[#f1f1f1]");
         descriptionColor.set("text-zinc-300")
+        titleColor.set("text-5xl leading-[55px] font-medium text-[#f1f1f1]")
         textAccent.set("text-indigo-500");
         elementBackgrounds.set("bg-zinc-900")
         elementAccent.set("bg-indigo-700");
@@ -52,6 +54,7 @@ theme.subscribe(value => {
         textColor.set("text-black");
         background.set("#FFFFFF;");
         descriptionColor.set("text-zinc-500");
+        titleColor.set("text-5xl leading-[55px] font-medium text-black")
         elementBackgrounds.set("bg-white");
         elementAccent.set("bg-indigo-700");
         inputBorder.set("border border-zinc-300");
