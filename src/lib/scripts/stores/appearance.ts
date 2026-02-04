@@ -1,6 +1,6 @@
 import { writable } from "svelte/store";
 
-export const theme = writable<string>("dark");
+export const theme = writable<string>("light");
 
 export let textColor = writable<string>("");
 export let descriptionColor = writable<string>("");
@@ -24,6 +24,7 @@ export let secondHeaderSectionText = writable<string>("");
 export let addToCartButton = writable<string>("");
 export let dropdownButton = writable<string>("");
 export let buttonHover = writable<string>("");
+export let iconColor = writable<string>("");
 
 theme.subscribe(value => {
     if (value === "dark"){
@@ -46,16 +47,17 @@ theme.subscribe(value => {
         secondHeaderSection.set("bg-white");
         secondHeaderSectionText.set("text-black");
         addToCartButton.set("bg-[#ffffff] text-black");
+        iconColor.set("#f1f1f1");
         
     } else {
         // Light theme
         borderColor.set("#000000");
         logoColor.set("#000000");
         textColor.set("text-black");
-        background.set("#FFFFFF;");
-        descriptionColor.set("text-zinc-500");
+        background.set("bg-[#F9FAFB]");
+        descriptionColor.set("text-zinc-600");
         titleColor.set("text-5xl leading-[55px] font-medium text-black")
-        elementBackgrounds.set("bg-white");
+        elementBackgrounds.set("bg-[#FFFFFF]");
         elementAccent.set("bg-indigo-700");
         inputBorder.set("border border-zinc-300");
         inputBackground.set("bg-white");
@@ -67,5 +69,6 @@ theme.subscribe(value => {
         secondHeaderSectionText.set("text-[#f1f1f1]");
         addToCartButton.set("bg-[#0F0F0F] text-white");
         buttonHover.set("transition hover:bg-[#e0e0e0]")
+        iconColor.set("#000000");
     }
 })

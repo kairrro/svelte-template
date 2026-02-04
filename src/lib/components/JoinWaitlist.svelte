@@ -2,6 +2,7 @@
     import { 
         buttonBackground,
         descriptionColor, 
+        inputBackground, 
         titleColor
 
     } from "$lib/scripts/stores/appearance";
@@ -32,7 +33,7 @@
             <input 
                 type="email" 
                 placeholder="Enter your email" 
-                class="bg-zinc-800 text-zinc-200 placeholder-zinc-400 px-4 rounded-l-lg w-full outline-none h-full text-sm md:rounded-lg"
+                class="{$inputBackground} text-zinc-200 placeholder-zinc-400 px-4 rounded-l-lg w-full outline-none h-full text-sm md:rounded-lg"
                 bind:value={email}
             />
 
