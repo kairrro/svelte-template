@@ -3,7 +3,8 @@
         buttonBackground,
         descriptionColor, 
         inputBackground, 
-        titleColor
+        titleColor,
+        textColor
 
     } from "$lib/scripts/stores/appearance";
 
@@ -33,7 +34,7 @@
             <input 
                 type="email" 
                 placeholder="Enter your email" 
-                class="{$inputBackground} text-zinc-200 placeholder-zinc-400 px-4 rounded-l-lg w-full outline-none h-full text-sm md:rounded-lg"
+                class="{$inputBackground} {$descriptionColor} text-zinc-200 placeholder-zinc-400 px-4 rounded-l-lg w-full outline-none h-full text-sm md:rounded-lg"
                 bind:value={email}
             />
 
