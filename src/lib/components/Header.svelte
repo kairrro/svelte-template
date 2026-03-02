@@ -15,7 +15,7 @@
     }
 </script>
 
-<header class="fixed w-screen {$background} {$textColor} top-0 right-0 left-0 border-b-[1px] {$borderColor} flex items-center justify-between box-sizing w-full text-sm z-20 px-10 py-[12px] z-30 md:px-4 ">
+<header class="fixed w-screen {$background} {$textColor} bg-[#04080D] top-0 right-0 left-0 border-b-[1px] {$borderColor} flex items-center justify-between box-sizing w-full text-sm z-20 px-10 py-[12px] z-30 md:px-4 ">
     <div class="flex items-center justify-between max-w-[1279px] w-full mx-auto" >
         <a href="/" class="transition hover:scale-110">
             <img src="/assets/logo.png" alt="logo" width="40px" height="40px" class="rounded-lg" />
@@ -23,9 +23,9 @@
     
         <div class="flex items-center gap-12 md:hidden text-sm">
             <a href="/" class="hover:underline underline-offset-4 transition">Home</a>
+            <a href="/#services" class="hover:underline underline-offset-4 transition">Services</a>
             <a href="/#how-it-works" class="hover:underline underline-offset-4 transition">How it Works</a>
-            <a href="/#why-it-works" class="hover:underline underline-offset-4 transition">Why it Works</a>
-            <a href="/#waitlist" class="hover:underline underline-offset-4 transition">Join Waitlist</a>
+            <a href="/#get-started" class="hover:underline underline-offset-4 transition">Get Started</a>
         </div>
     
         <button class="hidden md:flex p-2" on:click={() => toggleDropdown()} >

@@ -29,7 +29,7 @@ export let iconColor = writable<string>("");
 theme.subscribe(value => {
     if (value === "dark"){
         // Dark theme
-        borderColor.set("#f1f1f1");
+        borderColor.set("border-zinc-800");
         logoColor.set("#f1f1f1");
         textColor.set("text-[#f1f1f1]");
         descriptionColor.set("text-zinc-300")

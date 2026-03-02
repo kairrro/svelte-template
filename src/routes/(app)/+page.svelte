@@ -2,10 +2,9 @@
     import Hero from "$lib/components/Hero.svelte";
     import { SITE_NAME } from "$lib/scripts/globals/misc";
     import { description } from "$lib/scripts/globals/misc";
-    import Content from "$lib/components/custom/Content.svelte";
-  import JoinWaitlist from "$lib/components/JoinWaitlist.svelte";
-  import HowItWorks from "$lib/components/HowItWorks.svelte";
-  import WhyItWorks from "$lib/components/WhyItWorks.svelte";
+    import GetStarted from "$lib/components/GetStarted.svelte";
+    import Features from "$lib/components/Features.svelte";
+    import System from "$lib/components/System.svelte";
 </script>
 
 <svelte:head>
@@ -18,6 +17,6 @@
 </svelte:head>
 
 <Hero />
-<HowItWorks />
-<WhyItWorks />
-<JoinWaitlist />
+<Features />
+<System />
+<GetStarted />
