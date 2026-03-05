@@ -1,6 +1,7 @@
 <script lang="ts">
   import { fade } from "svelte/transition";
     import Rule from "../Rule.svelte";
+  import { descriptionColor, textColor } from "$lib/scripts/stores/appearance";
 
     let userAccountRules = [
         `
@@ -99,8 +100,8 @@
 {#if pageRendered}
     <section class="flex flex-col gap-10 mx-auto max-w-[1279px] px-10 mt-40" transition:fade >
         <div class="flex flex-col gap-2">
-            <h1 class="font-semibold text-3xl">Terms and Conditions</h1>
-            <p class="text-zinc-300" >Please read these terms and conditions carefully before using Our Service.</p>
+            <h1 class="font-semibold text-3xl {$textColor}">Terms and Conditions</h1>
+            <p class="{$descriptionColor}" >Please read these terms and conditions carefully before using Our Service.</p>
         </div>
 
         <div class="flex flex-col gap-16" >
